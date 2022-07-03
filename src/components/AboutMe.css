@@ -1,0 +1,184 @@
+.about{
+    width: 100%;
+    height: 30rem;
+}
+
+
+.about.container{
+    width: 80%;
+    display: block;
+    margin: 0px auto;
+    padding: 50px 0px;    
+}
+
+.container .title{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    
+
+}
+
+.container .title h1{
+    text-transform: uppercase;
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    
+}
+
+.container .title h1::after{
+    content: "";
+    height: 5px;
+    width: 100px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    display: block;
+    margin: auto;
+}
+
+.content1{
+    margin-top: 50px;
+    margin-left: 13%;
+    margin-right: 13%;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 8px;
+    width: auto;
+    height: 18rem;
+    
+}
+.content1 .article h3{
+    margin-left: 10px;
+    float: left;
+    width: 70%;
+    color: aliceblue;
+    margin-top: 5%;
+    text-align: justify;
+
+}
+
+.image{
+    float: right;
+    width: 25%;
+    margin-top: 2%;
+}
+
+.image .myimg{
+    width: 250px;
+    height: 250px;
+}
+
+@media screen and (max-width:1200px) {
+    .about{
+        height: 60rem;
+    }
+    .content1{
+        margin-top: 100px;
+        margin-left: 13%;
+        margin-right: 13%;
+        
+        width: auto;
+        height: 45rem;
+        
+    }
+    .content1 .article h3{
+        float: left;
+        width: 95%;
+        color: aliceblue;
+        margin-top: 5%;
+        margin-left: 2%;
+    }
+    .image{
+        margin-right: 350px;
+    }
+
+    .image .myimg{
+        width: 450px;
+        height: 450px;
+    }
+
+        
+    
+}
+
+@media screen and (max-width:700px){
+    .content1{
+        margin-top: 100px;
+        margin-left: 13%;
+        margin-right: 13%;
+        
+        width: auto;
+        height: 42rem;
+        
+    }
+    .image{
+        margin-right: 300px;
+    }
+
+    .image .myimg{
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width:634px){
+    .content1{
+        margin-top: 100px;
+        margin-left: 13%;
+        margin-right: 13%;
+        
+        width: auto;
+        height: 42rem;
+        
+    }
+    .image{
+        margin-right: 200px;
+    }
+
+    .image .myimg{
+        width: 290px;
+        height: 300px;
+    }
+}
+
+
+@media screen and (max-width:435px){
+    .content1{
+        margin-top: 100px;
+        margin-left: 13%;
+        margin-right: 13%;
+   
+        width: auto;
+        height: 45rem;
+        
+    }
+    .image{
+        margin-right: 180px;
+    }
+
+    .image .myimg{
+        width: 250px;
+        height: 250px;
+    }
+}
+@media screen and (max-width:340px){
+    .content1{
+        margin-top: 100px;
+        margin-left: 13%;
+        margin-right: 13%;
+        width: auto;
+        height: 48rem;
+        
+    }
+    .image{
+        margin-right: 100px;
+    }
+
+    .image .myimg{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+
+

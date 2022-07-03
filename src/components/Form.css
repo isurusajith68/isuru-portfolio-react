@@ -1,0 +1,38 @@
+
+label{
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+form{
+    margin-top: -100px;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 1rem;
+    margin: auto;
+    max-width: 600px;
+}
+
+form input, form textarea{
+    margin-bottom: 1rem;
+    padding: 10px 18px;
+    font-size: 1.2rem;
+    background-color: rgba(255,255,255,0.1);
+    border-color:rgba(255,255,255,0.1) ;
+    color: #f4f4f4;
+}
+.suc{
+    position: absolute;
+   width: 100%;
+}
+
+.p1{
+    font-size: 13px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-transform:uppercase;
+    margin-top: 620px
+    
+}
+
