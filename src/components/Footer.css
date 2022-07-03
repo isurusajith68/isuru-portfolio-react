@@ -47,11 +47,16 @@
 }
 
 
-/* @media screen and (max-width:640px) {
+@media screen and (max-width:640px) {
     .footer-container{
-        
+        margin-left: 10px;
         grid-template-columns:1fr;
     }
+    .social{
+        margin-top: 10%;
+        margin-left: 10px;
+        }
+        
     
 }
 
@@ -60,7 +65,11 @@
         margin-left: 1rem;
         
     }
+    .social{
+       margin-top: 10%;
+       margin-left: 10px;
+       }
        
     
-} */
+}
 
