@@ -47,9 +47,9 @@
 }
 
 
-@media screen and (max-width:640px) {
+/* @media screen and (max-width:640px) {
     .footer-container{
-        margin-left: 100px;
+        
         grid-template-columns:1fr;
     }
     
@@ -62,5 +62,5 @@
     }
        
     
-}
+} */
 
