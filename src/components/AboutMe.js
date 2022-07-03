@@ -1,5 +1,4 @@
 import "./AboutMe.css";
-import download from "../assets/download.jpg";
 import myimg from "../assets/myimg.jpg";
 import React from "react";
 
