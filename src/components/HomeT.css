@@ -68,7 +68,7 @@
     font-size: 1.5rem;
 }
 .sp{
-    color: rgb(0, 119, 247);
+    color: rgb(255, 255, 255);
     font-weight: bold;
 }
 @media screen and (max-width:640px) {
