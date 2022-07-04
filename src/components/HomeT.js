@@ -23,10 +23,10 @@ const HomeT = () => {
           />
         </h1>
         <div>
-          <a className="btn" href="Isuru Sajith-CV.pdf" download='Isuru CV.pdf'>
+          <a className="btn-light" href="Isuru Sajith-CV.pdf" download='Isuru CV.pdf'>
           RESUME
          </a>
-          <Link to="/Contact" className="btn-light">
+          <Link to="/Contact" className="btn">
             Contact
           </Link>
         </div>
