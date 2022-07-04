@@ -1,6 +1,7 @@
 .about{
     width: 100%;
     height: 30rem;
+    
 }
 
 
@@ -41,7 +42,7 @@
     margin-top: 50px;
     margin-left: 13%;
     margin-right: 13%;
-    border: 2px solid rgb(255, 255, 255);
+    
     border-radius: 8px;
     width: auto;
     height: 18rem;
@@ -68,7 +69,7 @@
     height: 250px;
 }
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1425px) {
     .about{
         height: 60rem;
     }
@@ -89,7 +90,39 @@
         margin-left: 2%;
     }
     .image{
-        margin-right: 350px;
+        margin-right: 460px;
+    }
+
+    .image .myimg{
+        width: 450px;
+        height: 450px;
+    }
+
+        
+    
+}
+@media screen and (max-width:913px) {
+    .about{
+        height: 60rem;
+    }
+    .content1{
+        margin-top: 100px;
+        margin-left: 13%;
+        margin-right: 13%;
+        
+        width: auto;
+        height: 45rem;
+        
+    }
+    .content1 .article h3{
+        float: left;
+        width: 95%;
+        color: aliceblue;
+        margin-top: 5%;
+        margin-left: 2%;
+    }
+    .image{
+        margin-right: 400px;
     }
 
     .image .myimg{
@@ -101,7 +134,7 @@
     
 }
 
-@media screen and (max-width:700px){
+@media screen and (max-width:768px){
     .content1{
         margin-top: 100px;
         margin-left: 13%;
@@ -112,7 +145,7 @@
         
     }
     .image{
-        margin-right: 300px;
+        margin-right: 325px;
     }
 
     .image .myimg{
@@ -121,28 +154,28 @@
     }
 }
 
-@media screen and (max-width:634px){
+@media screen and (max-width:652px){
     .content1{
         margin-top: 100px;
         margin-left: 13%;
         margin-right: 13%;
         
         width: auto;
-        height: 42rem;
+        height: 38rem;
         
     }
     .image{
-        margin-right: 200px;
+        margin-right: 240px;
     }
 
     .image .myimg{
-        width: 290px;
-        height: 300px;
+        width: 250px;
+        height: 250px;
     }
 }
 
 
-@media screen and (max-width:435px){
+@media screen and (max-width:463px){
     .content1{
         margin-top: 100px;
         margin-left: 13%;
@@ -153,7 +186,7 @@
         
     }
     .image{
-        margin-right: 180px;
+        margin-right: 210px;
     }
 
     .image .myimg{
@@ -161,7 +194,27 @@
         height: 250px;
     }
 }
-@media screen and (max-width:340px){
+
+@media screen and (max-width:427px){
+    .content1{
+        margin-top: 100px;
+        margin-left: 13%;
+        margin-right: 13%;
+   
+        width: auto;
+        height: 45rem;
+        
+    }
+    .image{
+        margin-right: 200px;
+    }
+
+    .image .myimg{
+        width: 250px;
+        height: 250px;
+    }
+}
+@media screen and (max-width:375px){
     .content1{
         margin-top: 100px;
         margin-left: 13%;
@@ -171,14 +224,57 @@
         
     }
     .image{
-        margin-right: 100px;
+        margin-right: 165px;
     }
 
     .image .myimg{
-        width: 100px;
-        height: 100px;
+        width: 200px;
+        height: 200px;
     }
 }
+
+@media screen and (max-width:375px){
+    .content1{
+        margin-top: 100px;
+        margin-left: 13%;
+        margin-right: 13%;
+        width: auto;
+        height: 48rem;
+        
+    }
+    .image{
+        margin-right: 135px;
+    }
+
+    .image .myimg{
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width:375px){
+    .about{
+        height: 65rem;
+    }
+    .content1{
+        margin-top: 100px;
+        margin-left: 13%;
+        margin-right: 13%;
+        width: auto;
+        height: 52rem;
+        
+    }
+    .image{
+        margin-right: 135px;
+    }
+
+    .image .myimg{
+        width: 150px;
+        height: 150px;
+    }
+}
+
+
 
 
 

@@ -1,8 +1,9 @@
 .hero-img{
-    width : 100%;
+    width : auto;
     background:rgba(0,0,0,0.5);
     height: 60vh;
     position: relative;
+    background-image: no-repeat;
 }
 
 .hero-img::before{
@@ -34,6 +35,18 @@
 
 .hero-img h1 {
     font-size: 2.4rem;
+}
+@media screen and (max-width:1160px) {
+
+    .hero-img h1 {
+        font-size: 2rem;
+    } 
+    .hero-img{
+        width : 100%;
+        background:rgba(0,0,0,0.5);
+        height: 40vh;
+        position: relative;
+    }
 }
 
 @media screen and (max-width:770px) {
@@ -72,6 +85,19 @@
         width : 100%;
         background:rgba(0,0,0,0.5);
         height: 20vh;
+        position: relative;
+    }
+}
+
+@media screen and (max-width:205px) {
+
+    .hero-img h1 {
+        font-size: 2rem;
+    } 
+    .hero-img{
+        width : 100%;
+        background:rgba(0,0,0,0.5);
+        height: 15vh;
         position: relative;
     }
 }
