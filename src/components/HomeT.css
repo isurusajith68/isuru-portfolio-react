@@ -37,6 +37,8 @@
   
 }
 
+
+
 .homeT .content h1{
     font-size: 3rem;
     padding: 0.6rem 0 1.5rem;
@@ -63,8 +65,11 @@
 }
 
 .tt{
-  
     font-size: 1.5rem;
+}
+.sp{
+    color: rgb(0, 119, 247);
+    font-weight: bold;
 }
 @media screen and (max-width:640px) {
     .hero .content h1{

@@ -2,17 +2,17 @@ import "./HomeT.css";
 import Typewriter from "typewriter-effect";
 
 import React from "react";
-import download from "../assets/download.jpg";
+import img from "../assets/download.jpg";
 import { Link } from "react-router-dom";
 
 const HomeT = () => {
   return (
     <div className="homeT">
       <div className="mask">
-        <img className="download" src={download} alt="download" />
+        <img className="download" src={img} alt="download" />
       </div>
       <div className="content">
-        <p className="tt">HI, I'M Isuru Sajith</p>
+        <p className="tt">HI, I'M <span className="sp">Isuru Sajith</span></p>
         <h1>
           <Typewriter
             options={{
@@ -23,9 +23,9 @@ const HomeT = () => {
           />
         </h1>
         <div>
-          <Link to="/Project" className="btn">
-            Projects
-          </Link>
+         <a href="Isuru Sajith-CV.pdf" download='Isuru CV.pdf'>
+          <button className="btn">Resume</button>
+         </a>
           <Link to="/Contact" className="btn-light">
             Contact
           </Link>
