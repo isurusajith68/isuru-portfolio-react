@@ -1,4 +1,94 @@
-.container{
-    width: 100%;
-    height: 50rem;
+.con {
+  height: auto;
+  background-color: rgb(0, 0, 0);
+}
+
+.titles {
+  text-align: center;
+  font-weight: bold;
+  font-size: 34px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.para {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.img {
+  height: 250px;
+  width: 400px;
+  object-fit: none;
+  border-radius: 25px;
+
+  border: 0px solid #fff;
+  margin: 20px ;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.button1 {
+  padding: 9px 14px;
+  font-size: 1rem;
+  border: 1px solid #fff;
+  text-transform: uppercase;
+  background: white;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+.button1:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: rgb(255, 255, 255);
+  transition: 0.3s;
+}
+.button {
+  margin-top: 20px;
+  padding: 9px 14px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  background: rgb(255, 0, 0);
+  color: #222;
+  border: 1px solid #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+.button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: rgb(255, 255, 255);
+  transition: 0.3s;
+}
+.span {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.overlay {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  background-color: rgb(0, 0, 0, 0.7);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+}
+.img:hover .overlay {
+  bottom: 0;
+  height: 100%;
 }

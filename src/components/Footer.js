@@ -60,10 +60,10 @@ const Footer = () => {
         </div>
         <div className="right">
           <h4>Explore</h4><br/>
-          <p><Link to="/">○ Home</Link></p><br/>
-          <p><Link to="/Project">○ Project</Link></p><br/>
-          <p><Link to="/About">○ About</Link></p><br/>
-          <p><Link to="/contact">○ Contact</Link></p><br/>
+          <p><Link to="/">Home</Link></p><br/>
+          <p><Link to="/Project">Project</Link></p><br/>
+          <p><Link to="/About">About</Link></p><br/>
+          <p><Link to="/contact"> Contact</Link></p><br/>
           
           
           <div className="social">
