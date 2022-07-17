@@ -3,7 +3,7 @@ import Typewriter from "typewriter-effect";
 
 import React from "react";
 import download from "../assets/download.jpg";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 
 const HomeT = () => {
   return (
@@ -26,7 +26,7 @@ const HomeT = () => {
           <a className="btn" href="Isuru Sajith-CV.pdf" download='Isuru CV.pdf'>
           RESUME
          </a>
-          <Link to="/Contact" className="btn-light">
+          <Link to="form" className="btn-light" smooth={true} duration={500} style={{cursor:`pointer`}}>
             Contact
           </Link>
         </div>
