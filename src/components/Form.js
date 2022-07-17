@@ -34,7 +34,7 @@ export const Form = () => {
   };
 
   return (
-    <div>
+    <div name='form'>
     <h1  style={{textAlign:`center`, marginTop:`30px`}}>Contact</h1>
       {status && RenderAlert()}
       <form ref={form} onSubmit={sendEmail}>
