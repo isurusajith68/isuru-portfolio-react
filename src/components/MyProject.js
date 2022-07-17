@@ -1,6 +1,6 @@
 import "./MyProject.css";
 import React from "react";
-
+import png from '../assets/png.gif'
 
 const Project = () => {
   return (
@@ -15,7 +15,7 @@ const Project = () => {
           <div
             className="img"
             style={{
-              backgroundImage: `url(https://www.bluecompass.com/filesimages/News%20and%20Blog/2020/web-animation.gif)`,backgroundPosition:`center` , backgroundSize:`cover`
+              backgroundImage: `url(${png})`
             }}
           >
             <div className="overlay">
