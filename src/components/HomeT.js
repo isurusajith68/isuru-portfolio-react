@@ -18,7 +18,7 @@ const HomeT = () => {
         <h1>
           <Typewriter
             options={{
-              // strings: ["Web Developer💻"],
+              strings: ["Web Developer💻"],
               autoStart: true,
               loop: true,
             }}
