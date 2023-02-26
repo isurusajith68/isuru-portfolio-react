@@ -36,7 +36,7 @@ const Project = () => {
         <div
           className="img"
           style={{
-            backgroundImage: `url(https://static.weblinkindia.net/images/creative-img.webp)`,backgroundPosition:`center` , backgroundSize:`cover`
+          backgroundImage: `url(${img})`
           }}
         >
           <div className="overlay"> <div>
