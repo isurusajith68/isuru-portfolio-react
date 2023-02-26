@@ -1,7 +1,7 @@
 import "./MyProject.css";
 import React from "react";
 import png from '../assets/png.gif'
-
+import img from '../assets/img.img'
 const Project = () => {
   return (
     <div name='project'className="con">
