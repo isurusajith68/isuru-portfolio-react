@@ -75,7 +75,7 @@ const Footer = () => {
                 marginRight: "1rem",
               }}
             /></a>
-            <a href="https://github.com/isuRuSajit"><FaGithub
+            <a href="https://github.com/isurusajith68"><FaGithub
               size={30}
               style={{
                 color: "#fff",
