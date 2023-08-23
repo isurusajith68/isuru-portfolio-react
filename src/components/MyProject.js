@@ -76,7 +76,7 @@ const Project = () => {
               <a href="/">
                 <button className="button">Demo</button>
               </a>
-              <a href="/https://github.com/isurusajith68/Ecomate_MERN">
+              <a href="https://github.com/isurusajith68/Ecomate_MERN">
                 <button className="button1">Code</button>
               </a>
             </div>
@@ -99,7 +99,7 @@ const Project = () => {
               <a href="/">
                 <button className="button">Demo</button>
               </a>
-              <a href="/https://github.com/isurusajith68/ecommerce_site_redux">
+              <a href="https://github.com/isurusajith68/ecommerce_site_redux">
                 <button className="button1">Code</button>
               </a>
             </div>
