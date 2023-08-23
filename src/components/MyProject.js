@@ -2,6 +2,9 @@ import "./MyProject.css";
 import React from "react";
 import png from "../assets/png.gif";
 import img from "../assets/rn.gif";
+import eco from "../assets/ec2.gif";
+import and from "../assets/and.gif";
+import mern from "../assets/mern.gif";
 
 const Project = () => {
   return (
@@ -59,7 +62,7 @@ const Project = () => {
         <div
           className="img"
           style={{
-            backgroundImage: `url(https://static.wixstatic.com/media/72c0b2_b3cae0ab282b4c80b826d6cd1870192f~mv2.jpg/v1/fit/w_320%2Ch_437%2Cal_c%2Cq_80/file.jpg)`,
+            backgroundImage: `url(${eco})`,
             backgroundPosition: `center`,
             backgroundSize: `cover`,
           }}
@@ -67,13 +70,13 @@ const Project = () => {
           <div className="overlay">
             {" "}
             <div>
-              <span className="span">React JS Application</span>
+              <span className="span">MERN Ecomit Web App </span>
             </div>
             <div>
               <a href="/">
                 <button className="button">Demo</button>
               </a>
-              <a href="/">
+              <a href="/https://github.com/isurusajith68/Ecomate_MERN">
                 <button className="button1">Code</button>
               </a>
             </div>
@@ -82,7 +85,7 @@ const Project = () => {
         <div
           className="img"
           style={{
-            backgroundImage: `url(https://i.pinimg.com/originals/44/c3/c4/44c3c4bacbe495f46605b10d9df39f38.jpg)`,
+            backgroundImage: `url(${mern})`,
             backgroundPosition: `center`,
             backgroundSize: `cover`,
           }}
@@ -90,13 +93,13 @@ const Project = () => {
           <div className="overlay">
             {" "}
             <div>
-              <span className="span">React JS Application</span>
+              <span className="span">MERN Redux Online Store</span>
             </div>
             <div>
               <a href="/">
                 <button className="button">Demo</button>
               </a>
-              <a href="/">
+              <a href="/https://github.com/isurusajith68/ecommerce_site_redux">
                 <button className="button1">Code</button>
               </a>
             </div>
@@ -129,7 +132,7 @@ const Project = () => {
         <div
           className="img"
           style={{
-            backgroundImage: `url(https://ceblog.s3.amazonaws.com/wp-content/uploads/2018/08/28183850/home_post_2.gif)`,
+            backgroundImage: `url(${and})`,
             backgroundPosition: `center`,
             backgroundSize: `cover`,
           }}
@@ -137,7 +140,7 @@ const Project = () => {
           <div className="overlay">
             {" "}
             <div>
-              <span className="span">React JS Application</span>{" "}
+              <span className="span">Android Aplication (Java)</span>{" "}
             </div>
             <div>
               <a href="/">
