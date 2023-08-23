@@ -55,12 +55,13 @@
     float: right;
     width: 25%;
     margin-top: 2%;
-     border-radius:50%;
+    
 }
 
 .image .myimg{
     width: 250px;
     height: 250px;
+    border-radius: 50%;
 }
 
 @media screen and (max-width:1425px) {
