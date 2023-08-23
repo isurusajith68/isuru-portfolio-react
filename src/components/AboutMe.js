@@ -7,7 +7,7 @@ const AboutMe = () => {
     <div className="about">
       <div className="container">
         <div className="title">
-          <h1>About Me</h1>
+          <h1>About Me isuru</h1>
           <div className="content1">
             <div className="article">
               <h3>
