@@ -1,295 +1,264 @@
-.about{
-    width: 100%;
-    height: 30rem;
-    background-color: rgb(0, 0, 0,0.5);
+.about {
+  width: 100%;
+  height: 30rem;
+  background-color: rgb(0, 0, 0, 0.5);
 }
 
-
-.about.container{
-   
-    width: 80%;
-    display: block;
-    margin: 0px auto;
-    padding: 50px 0px;    
+.about.container {
+  width: 80%;
+  display: block;
+  margin: 0px auto;
+  padding: 50px 0px;
 }
 
-.container .title{
-    width: 100%;
-    text-align: center;
-    margin-bottom: 50px;
-    margin-top: 50px;
-    
-
+.container .title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
-.container .title h1{
-  
-    font-size: 35px;
-    color: rgb(255, 255, 255);
-    
+.container .title h1 {
+  font-size: 35px;
+  color: rgb(255, 255, 255);
 }
 
+.content1 {
+  margin-top: 50px;
+  margin-left: 13%;
+  margin-right: 13%;
 
-.content1{
-    
+  border-radius: 8px;
+  width: auto;
+  height: 18rem;
+}
+.content1 .article h3 {
+  margin-left: 10px;
+  float: left;
+  width: 70%;
+  color: aliceblue;
+  margin-top: 5%;
+  letter-spacing: normal;
+}
+
+.image {
+  float: right;
+  width: 25%;
+  margin-top: 2%;
+}
+
+.image .myimg {
+  width: 250px;
+  height: 250px;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+}
+.image .myimg:hover {
+  opacity: 0.5;
+  transform: rotate3d(0, 0, 1, 360deg);
+}
+
+@media screen and (max-width: 1425px) {
+  .about {
+    height: 60rem;
+  }
+  .content1 {
     margin-top: 50px;
     margin-left: 13%;
     margin-right: 13%;
-    
-    border-radius: 8px;
+
     width: auto;
-    height: 18rem;
-    
-}
-.content1 .article h3{
-    margin-left: 10px;
+    height: 45rem;
+  }
+  .content1 .article h3 {
     float: left;
-    width: 70%;
+    width: 95%;
     color: aliceblue;
     margin-top: 5%;
-   
-    letter-spacing:normal;
+    margin-left: 2%;
+    letter-spacing: normal;
+  }
+  .image {
+    margin-top: 40px;
+    margin-right: 350px;
+  }
+
+  .image .myimg {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 913px) {
+  .about {
+    height: 60rem;
+  }
+  .content1 {
+    margin-top: 50px;
+    margin-left: 13%;
+    margin-right: 13%;
+
+    width: auto;
+    height: 45rem;
+  }
+  .content1 .article h3 {
+    float: left;
+    width: 95%;
+    color: aliceblue;
+    margin-top: 5%;
+    margin-left: 2%;
+    letter-spacing: normal;
+  }
+  .image {
+    margin-right: 320px;
+  }
+
+  .image .myimg {
+    width: 300px;
+    height: 300px;
+  }
 }
 
-.image{
-    float: right;
-    width: 25%;
-    margin-top: 2%;
-    
+@media screen and (max-width: 768px) {
+  .content1 {
+    margin-top: 50px;
+    margin-left: 13%;
+    margin-right: 13%;
+
+    width: auto;
+    height: 42rem;
+  }
+  .image {
+    margin-right: 300px;
+  }
+
+  .image .myimg {
+    width: 300px;
+    height: 300px;
+  }
 }
 
-.image .myimg{
+@media screen and (max-width: 652px) {
+  .content1 {
+    margin-top: 50px;
+    margin-left: 13%;
+    margin-right: 13%;
+
+    width: auto;
+    height: 38rem;
+  }
+  .image {
+    margin-right: 240px;
+  }
+
+  .image .myimg {
     width: 250px;
     height: 250px;
-    border-radius: 50%;
+  }
 }
 
-@media screen and (max-width:1425px) {
-    .about{
-        height: 60rem;
-    }
-    .content1{
-        margin-top: 50px;
-        margin-left: 13%;
-        margin-right: 13%;
-        
-        width: auto;
-        height: 45rem;
-        
-    }
-    .content1 .article h3{
-        float: left;
-        width: 95%;
-        color: aliceblue;
-        margin-top: 5%;
-        margin-left: 2%;
-        letter-spacing:normal;
-    }
-    .image{
-        margin-top:40px;
-        margin-right: 460px;
-    }
+@media screen and (max-width: 463px) {
+  .content1 {
+    margin-top: 50px;
+    margin-left: 13%;
+    margin-right: 13%;
 
-    .image .myimg{
-        width: 450px;
-        height: 450px;
-    }
+    width: auto;
+    height: 45rem;
+  }
+  .content1 .article h3 {
+    letter-spacing: normal;
+  }
+  .image {
+    margin-right: 210px;
+  }
 
-        
-    
-}
-@media screen and (max-width:913px) {
-    .about{
-        height: 60rem;
-    }
-    .content1{
-        margin-top: 50px;
-        margin-left: 13%;
-        margin-right: 13%;
-        
-        width: auto;
-        height: 45rem;
-        
-    }
-    .content1 .article h3{
-        float: left;
-        width: 95%;
-        color: aliceblue;
-        margin-top: 5%;
-        margin-left: 2%;
-        letter-spacing:normal;
-    }
-    .image{
-        margin-right: 400px;
-    }
-
-    .image .myimg{
-        width: 450px;
-        height: 450px;
-    }
-
-        
-    
+  .image .myimg {
+    width: 250px;
+    height: 250px;
+  }
 }
 
-@media screen and (max-width:768px){
-    .content1{
-        margin-top: 50px;
-        margin-left: 13%;
-        margin-right: 13%;
-        
-        width: auto;
-        height: 42rem;
-        
-    }
-    .image{
-        margin-right: 325px;
-    }
+@media screen and (max-width: 427px) {
+  .content1 {
+    margin-top: 50px;
+    margin-left: 13%;
+    margin-right: 13%;
 
-    .image .myimg{
-        width: 400px;
-        height: 400px;
-    }
+    width: auto;
+    height: 45rem;
+  }
+
+  .image {
+    margin-right: 200px;
+  }
+
+  .image .myimg {
+    width: 250px;
+    height: 250px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .content1 {
+    margin-top: 50px;
+    margin-left: 13%;
+    margin-right: 13%;
+    width: auto;
+    height: 48rem;
+  }
+  .content1 .article h3 {
+    letter-spacing: none;
+  }
+  .image {
+    margin-right: 165px;
+  }
+
+  .image .myimg {
+    width: 200px;
+    height: 200px;
+  }
 }
 
-@media screen and (max-width:652px){
-    .content1{
-        margin-top: 50px;
-        margin-left: 13%;
-        margin-right: 13%;
-        
-        width: auto;
-        height: 38rem;
-        
-    }
-    .image{
-        margin-right: 240px;
-    }
+@media screen and (max-width: 375px) {
+  .content1 {
+    margin-top: 50px;
+    margin-left: 13%;
+    margin-right: 13%;
+    width: auto;
+    height: 48rem;
+  }
+  .content1 .article h3 {
+    letter-spacing: normal;
+  }
+  .image {
+    margin-right: 135px;
+  }
 
-    .image .myimg{
-        width: 250px;
-        height: 250px;
-    }
+  .image .myimg {
+    width: 150px;
+    height: 150px;
+  }
 }
 
+@media screen and (max-width: 375px) {
+  .about {
+    height: 65rem;
+  }
+  .content1 {
+    margin-top: 50px;
+    margin-left: 13%;
+    margin-right: 13%;
+    width: auto;
+    height: 52rem;
+  }
+  .content1 .article h3 {
+    letter-spacing: normal;
+  }
+  .image {
+    margin-right: 135px;
+  }
 
-@media screen and (max-width:463px){
-    .content1{
-        margin-top: 50px;
-        margin-left: 13%;
-        margin-right: 13%;
-   
-        width: auto;
-        height: 45rem;
-        
-    }
-    .content1 .article h3{
-        
-        letter-spacing:normal;
-    }
-    .image{
-        margin-right: 210px;
-    }
-
-    .image .myimg{
-        width: 250px;
-        height: 250px;
-    }
+  .image .myimg {
+    width: 150px;
+    height: 150px;
+  }
 }
-
-@media screen and (max-width:427px){
-    .content1{
-        margin-top: 50px;
-        margin-left: 13%;
-        margin-right: 13%;
-   
-        width: auto;
-        height: 45rem;
-        
-    }
- 
-    .image{
-        margin-right: 200px;
-    }
-
-    .image .myimg{
-        width: 250px;
-        height: 250px;
-    }
-}
-@media screen and (max-width:376px){
-    .content1{
-        margin-top: 50px;
-        margin-left: 13%;
-        margin-right: 13%;
-        width: auto;
-        height: 48rem;
-        
-    }
-    .content1 .article h3{
-        
-        letter-spacing:none;
-    }
-    .image{
-        margin-right: 165px;
-    }
-
-    .image .myimg{
-        width: 200px;
-        height: 200px;
-    }
-}
-
-@media screen and (max-width:375px){
-    .content1{
-        margin-top: 50px;
-        margin-left: 13%;
-        margin-right: 13%;
-        width: auto;
-        height: 48rem;
-        
-    }
-    .content1 .article h3{
-        
-        letter-spacing:normal;
-    }
-    .image{
-        margin-right: 135px;
-    }
-
-    .image .myimg{
-        width: 150px;
-        height: 150px;
-    }
-}
-
-@media screen and (max-width:375px){
-    .about{
-        height: 65rem;
-    }
-    .content1{
-        margin-top: 50px;
-        margin-left: 13%;
-        margin-right: 13%;
-        width: auto;
-        height: 52rem;
-        
-    }
-    .content1 .article h3{
-        
-        letter-spacing:normal;
-    }
-    .image{
-        margin-right: 135px;
-    }
-
-    .image .myimg{
-        width: 150px;
-        height: 150px;
-    }
-}
-
-
-
-
-
