@@ -22,9 +22,12 @@ const AboutMe = () => {
               </h3>
             </div>
             <div className="image">
-              <img className="myimg" src={myimg} alt="myimg" />
+              <img
+                className="myimg"
+                src="https://avatars.githubusercontent.com/u/89340506?v=4"
+                alt="myimg"
+              />
             </div>
-           
           </div>
         </div>
       </div>

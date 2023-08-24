@@ -1,0 +1,30 @@
+.scroll-btn {
+  position: fixed;
+  width: 100%;
+  left: 94%;
+  bottom: 50px;
+  height: 20px;
+  font-size: 3rem;
+  z-index: 999;
+  cursor: pointer;
+  color: white;
+}
+
+.rotate {
+  animation: rotateImg 2s linear infinite;
+}
+@keyframes rotateImg {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+/* .ro:hover {
+  -webkit-transform: rotateZ(-100deg);
+  -ms-transform: rotateZ(-100deg);
+  transform: rotateZ(-100deg);
+  transition: 1s ease;
+} */
