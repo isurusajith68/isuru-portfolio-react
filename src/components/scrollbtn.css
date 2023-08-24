@@ -28,3 +28,18 @@
   transform: rotateZ(-100deg);
   transition: 1s ease;
 } */
+@media screen and (max-width: 900px) {
+  .scroll-btn {
+    left: 90%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .scroll-btn {
+    left: 88%;
+  }
+}
+@media screen and (max-width: 300px) {
+  .scroll-btn {
+    left: 85%;
+  }
+}
