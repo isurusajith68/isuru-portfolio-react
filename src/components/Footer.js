@@ -1,5 +1,5 @@
 import "./Footer.css";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import React from "react";
 import {
   FaHome,
@@ -15,9 +15,9 @@ const Footer = () => {
     <div className="footer">
       <div className="footer-container">
         <div className="left">
-        <h4>Contact</h4><br/>
+          <h4>Contact</h4>
+          <br />
           <div className="location">
-          
             <FaHome
               size={20}
               style={{
@@ -59,36 +59,83 @@ const Footer = () => {
           </div>
         </div>
         <div className="right">
-          <h4>Explore</h4><br/>
-          <p><Link to="/">Home</Link></p><br/>
-          <p><Link to="/Project">Project</Link></p><br/>
-          <p><Link to="/About">About</Link></p><br/>
-          <p><Link to="/contact"> Contact</Link></p><br/>
-          
-          
+          <h4>Explore</h4>
+          <br />
+          <p>
+            <Link
+              to="homeT"
+              smooth={true}
+              duration={500}
+              style={{ cursor: `pointer` }}
+            >
+              Home
+            </Link>
+          </p>
+          <br />
+          <p>
+            <Link
+              to="project"
+              smooth={true}
+              duration={500}
+              style={{ cursor: `pointer` }}
+            >
+              Project
+            </Link>
+          </p>
+          <br />
+          <p>
+            <Link
+              to="about"
+              smooth={true}
+              duration={500}
+              style={{ cursor: `pointer` }}
+            >
+              About
+            </Link>
+          </p>
+          <br />
+          <p>
+            <Link
+              to="form"
+              smooth={true}
+              duration={500}
+              style={{ cursor: `pointer` }}
+            >
+              Contact
+            </Link>
+          </p>
+          <br />
+
           <div className="social">
-          <h4 className="so">Social</h4><br/>
-            <a href="https://www.facebook.com/isu.1238/"><FaFacebook
-              size={30}
-              style={{
-                color: "#fff",
-                marginRight: "1rem",
-              }}
-            /></a>
-            <a href="https://github.com/isurusajith68"><FaGithub
-              size={30}
-              style={{
-                color: "#fff",
-                marginRight: "1rem",
-              }}
-            /></a>
-            <a href="https://www.linkedin.com/in/isuru-sajith-rajapaksha/"><FaLinkedin
-              size={30}
-              style={{
-                color: "#fff",
-                marginRight: "1rem",
-              }}
-            /></a>
+            <h4 className="so">Social</h4>
+            <br />
+            <a href="https://www.facebook.com/isu.1238/">
+              <FaFacebook
+                size={30}
+                style={{
+                  color: "#fff",
+                  marginRight: "1rem",
+                }}
+              />
+            </a>
+            <a href="https://github.com/isurusajith68">
+              <FaGithub
+                size={30}
+                style={{
+                  color: "#fff",
+                  marginRight: "1rem",
+                }}
+              />
+            </a>
+            <a href="https://www.linkedin.com/in/isuru-sajith-rajapaksha/">
+              <FaLinkedin
+                size={30}
+                style={{
+                  color: "#fff",
+                  marginRight: "1rem",
+                }}
+              />
+            </a>
           </div>
         </div>
       </div>

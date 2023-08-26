@@ -7,6 +7,7 @@ import Skills from "../components/Skills";
 import Project from "../components/MyProject";
 import { Form } from "../components/Form";
 import ScrollBtn from "../components/scrollBtn";
+import "./home.css";
 
 const Home = () => {
   return (

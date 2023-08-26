@@ -1,20 +1,26 @@
-import "./index.css"
-import Home from "./routes/Home";
-import About from "./routes/About";
-import Contact from "./routes/Contact";
-import Project from "./routes/Project";
-import { Route, Routes } from "react-router-dom";
-
+import Navbar from "./components/Navbar";
+import HomeT from "./components/HomeT";
+import ScrollBtn from "./components/scrollBtn";
+import AboutMe from "./components/AboutMe";
+import Skills from "./components/Skills";
+import { Form } from "./components/Form";
+import Footer from "./components/Footer";
+import Project from "./components/MyProject";
+import "./App.css";
 function App() {
   return (
-    <>
-  <Routes>
-    <Route  path="/" element={<Home />} />
-    <Route  path="/About" element={<About />} />
-    <Route  path="/Contact" element={<Contact />} />
-    <Route  path="/Project" element={<Project />} />
-  </Routes>
-    </>
+    <div className="custom-scroll">
+      <div className="custom-scroll-content">
+        <Navbar />
+        <HomeT />
+        <ScrollBtn />
+        <AboutMe />
+        <Skills />
+        <Project />
+        <Form />
+        <Footer />
+      </div>
+    </div>
   );
 }
 
