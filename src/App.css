@@ -15,7 +15,7 @@
   background-color: #000000;
 }
 /* App.css */
-.app-container {
+/* .app-container {
   position: absolute;
   width: 100%;
   overflow: hidden;
@@ -23,4 +23,4 @@
   height: 100vh;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
-}
+} */
