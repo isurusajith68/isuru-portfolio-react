@@ -1,21 +1,16 @@
-/* .custom-scroll {
-  height: 300px;
-  overflow: hidden;
+::-webkit-scrollbar {
+  width: 10px;
 }
 
-.custom-scroll-content {
-  max-height: 300px;
-  overflow-y: scroll;
+::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-radius: 5px;
 }
 
-.custom-scroll-content::-webkit-scrollbar {
-  width: 8px;
+::-webkit-scrollbar-thumb:hover {
+  background-color: #ffffff;
 }
 
-.custom-scroll-content::-webkit-scrollbar-track {
-  background-color: #f0f0f0;
+::-webkit-scrollbar-track {
+  background-color: #000000;
 }
-
-.custom-scroll-content::-webkit-scrollbar-thumb {
-  background-color: #888888;
-} */
