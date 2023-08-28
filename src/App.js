@@ -9,8 +9,8 @@ import Project from "./components/MyProject";
 import "./App.css";
 function App() {
   return (
-    <div className="custom-scroll">
-      <div className="custom-scroll-content">
+    <div className="app-container">
+      <div>
         <Navbar />
         <HomeT />
         <ScrollBtn />
