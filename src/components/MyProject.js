@@ -1,6 +1,6 @@
 import "./MyProject.css";
 import React from "react";
-import png from "../assets/png.gif";
+// import png from "../assets/png.gif";
 import img from "../assets/rn.gif";
 import eco from "../assets/ec2.gif";
 import and from "../assets/and.gif";
