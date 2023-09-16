@@ -9,7 +9,7 @@ import Project from "./components/MyProject";
 import "./App.css";
 function App() {
   return (
-    <div className="app-container">
+    <div>
       <div>
         <Navbar />
         <HomeT />

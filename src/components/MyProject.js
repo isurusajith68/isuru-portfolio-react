@@ -18,7 +18,7 @@ const Project = () => {
         <div
           className="img"
           style={{
-            backgroundImage: `url(${png})`,
+            // backgroundImage: `url(${png})`,
           }}
         >
           <div className="overlay">
