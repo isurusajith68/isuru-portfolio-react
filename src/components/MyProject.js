@@ -1,5 +1,5 @@
 import "./MyProject.css";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import img from "../assets/rn.gif";
 import eco from "../assets/ec2.gif";
 import and from "../assets/and.gif";
@@ -7,12 +7,13 @@ import mern from "../assets/mern.gif";
 import png from "../assets/png.gif";
 import coming from "../assets/87162442-bf3e8180-c2e7-11ea-9f2a-53a50306b7ce.gif";
 import authImage from "../assets/auths.gif";
+import { scrollSpy } from "react-scroll";
 
 const projectsPerPage = 3;
 
 const Project = () => {
   const [currentPage, setCurrentPage] = useState(2);
-
+  const projectSectionRef = useRef(null);
   const startIndex = (currentPage - 1) * projectsPerPage;
 
   const projects = [
@@ -81,7 +82,12 @@ const Project = () => {
   console.log(totalPages);
   console.log(projects);
   return (
-    <div name="project" className="con">
+    <div
+      name="project"
+      className="con"
+      id="projectSection"
+      ref={projectSectionRef}
+    >
       <div>
         <h1 className="titles">Project</h1>
         {/* <p className="parf">My recent work</p> */}
@@ -118,7 +124,15 @@ const Project = () => {
           ""
         ) : (
           <button
-            onClick={() => setCurrentPage(currentPage - 1)}
+            onClick={() => {
+              setCurrentPage(currentPage - 1);
+              if (projectSectionRef.current) {
+                window.scrollTo({
+                  top: projectSectionRef.current.offsetTop - 100,
+                  behavior: "smooth",
+                });
+              }
+            }}
             style={{
               width: "70px",
               height: "30px",
@@ -133,7 +147,16 @@ const Project = () => {
         {Array.from({ length: totalPages }, (_, i) => (
           <button
             key={i}
-            onClick={() => handlePageChange(i + 1)}
+            onClick={() => {
+              handlePageChange(i + 1);
+
+              if (projectSectionRef.current) {
+                window.scrollTo({
+                  top: projectSectionRef.current.offsetTop - 100,
+                  behavior: "smooth",
+                });
+              }
+            }}
             className={currentPage === i + 1 ? "active" : ""}
           >
             {i + 1}
@@ -143,7 +166,15 @@ const Project = () => {
           ""
         ) : (
           <button
-            onClick={() => setCurrentPage(currentPage + 1)}
+            onClick={() => {
+              setCurrentPage(currentPage + 1);
+              if (projectSectionRef.current) {
+                window.scrollTo({
+                  top: projectSectionRef.current.offsetTop - 100,
+                  behavior: "smooth",
+                });
+              }
+            }}
             style={{
               width: "70px",
               height: "30px",
