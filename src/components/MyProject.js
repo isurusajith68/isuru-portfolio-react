@@ -7,7 +7,6 @@ import mern from "../assets/mern.gif";
 import png from "../assets/png.gif";
 import coming from "../assets/87162442-bf3e8180-c2e7-11ea-9f2a-53a50306b7ce.gif";
 import authImage from "../assets/auths.gif";
-import { scrollSpy } from "react-scroll";
 
 const projectsPerPage = 3;
 
