@@ -11,29 +11,11 @@ import authImage from "../assets/auths.gif";
 const projectsPerPage = 3;
 
 const Project = () => {
-  const [currentPage, setCurrentPage] = useState(2);
+  const [currentPage, setCurrentPage] = useState(1);
   const projectSectionRef = useRef(null);
   const startIndex = (currentPage - 1) * projectsPerPage;
 
   const projects = [
-    {
-      img: `url(${eco})`,
-      name: "Eco Mate Web App (MERN Stack)",
-      gitUrl: `https://github.com/isurusajith68/Ecomate_MERN`,
-      demo: "",
-    },
-    {
-      img: `url(${authImage})`,
-      name: "User Authentication (Jwt ReactJs) ",
-      gitUrl: `https://github.com/isurusajith68/Login-OTP-Validation`,
-      demo: "",
-    },
-    {
-      img: `url(${png})`,
-      name: "Shopping Website (ReactJs)",
-      gitUrl: `https://github.com/isurusajith68/shoping-app-react`,
-      demo: "",
-    },
     {
       img: `url(${img})`,
       name: "E Shop (React Native)",
@@ -52,6 +34,25 @@ const Project = () => {
       gitUrl: `https://github.com/isurusajith68`,
       demo: "",
     },
+    {
+      img: `url(${eco})`,
+      name: "Eco Mate Web App (MERN Stack)",
+      gitUrl: `https://github.com/isurusajith68/Ecomate_MERN`,
+      demo: "",
+    },
+    {
+      img: `url(${authImage})`,
+      name: "User Authentication (Jwt ReactJs) ",
+      gitUrl: `https://github.com/isurusajith68/Login-OTP-Validation`,
+      demo: "",
+    },
+    {
+      img: `url(${png})`,
+      name: "Shopping Website (ReactJs)",
+      gitUrl: `https://github.com/isurusajith68/shoping-app-react`,
+      demo: "",
+    },
+
     {
       img: `url(${coming})`,
       name: "coming soon",

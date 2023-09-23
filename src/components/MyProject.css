@@ -85,7 +85,7 @@
   align-items: center;
   justify-content: center;
   border-radius: 25px;
-  background-color: rgb(0, 0, 0, 0.7);
+  background-color: rgb(0, 0, 0, 0.1);
   overflow: hidden;
   width: 100%;
   bottom: 0;
@@ -93,7 +93,8 @@
   transition: 0.5s ease;
 }
 .overlay:hover {
-  background-color: rgb(0, 0, 0, 0.2);
+  background-color: rgb(0, 0, 0, 0.6);
+  height: 100%;
 }
 
 .pagination {
