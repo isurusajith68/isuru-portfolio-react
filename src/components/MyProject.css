@@ -19,21 +19,25 @@
   margin-bottom: 50px;
 }
 
-.container {
+.container22 {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
-
+.container22.animate {
+  transform: translateX(-100%);
+}
 .img {
   height: 250px;
   width: 400px;
-  object-fit: none;
+  background-size: cover; /* Ensures the image covers the container */
+  background-repeat: no-repeat; /* Prevents image repetition */
+  background-position: center;
   border-radius: 25px;
   border: 0px solid #fff;
-  margin: 20px ;
-  margin-bottom: 50px;
+  margin: 20px;
+  margin-bottom: 60px;
   position: relative;
 }
 
@@ -57,15 +61,15 @@
   padding: 9px 14px;
   font-size: 1rem;
   text-transform: uppercase;
-  background: rgb(255, 0, 0);
-  color: #222;
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
   border: 1px solid #fff;
   font-weight: 600;
   cursor: pointer;
 }
 .button:hover {
-  background: rgba(255, 255, 255, 0.2);
-  color: rgb(255, 255, 255);
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   transition: 0.3s;
 }
 .span {
@@ -84,10 +88,36 @@
   background-color: rgb(0, 0, 0, 0.7);
   overflow: hidden;
   width: 100%;
-  height: 0;
-  transition: 0.5s ease;
-}
-.img:hover .overlay {
   bottom: 0;
   height: 100%;
+  transition: 0.5s ease;
+}
+.overlay:hover {
+  background-color: rgb(0, 0, 0, 0.2);
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.pagination button {
+  background-color: white;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button.active {
+  background-color: black;
+  color: white;
+  transform: translateY(2px);
+  font-weight: bold;
 }
