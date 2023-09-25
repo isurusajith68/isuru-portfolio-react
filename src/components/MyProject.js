@@ -5,6 +5,7 @@ import eco from "../assets/ec2.gif";
 import and from "../assets/and.gif";
 import mern from "../assets/mern.gif";
 import png from "../assets/png.gif";
+import portfolio from "../assets/portfolio.gif";
 import coming from "../assets/87162442-bf3e8180-c2e7-11ea-9f2a-53a50306b7ce.gif";
 import authImage from "../assets/auths.gif";
 
@@ -54,9 +55,9 @@ const Project = () => {
     },
 
     {
-      img: `url(${coming})`,
-      name: "coming soon",
-      gitUrl: `https://github.com/isurusajith68/`,
+      img: `url(${portfolio})`,
+      name: "Portfolio (ReactJs)",
+      gitUrl: `https://github.com/isurusajith68/isuru-portfolio-react`,
       demo: "",
     },
     {
