@@ -29,6 +29,13 @@ const Project = () => {
       gitUrl: `https://github.com/isurusajith68/ecommerce_site_redux`,
       demo: "",
     },
+      {
+      img: `url(${png})`,
+      name: "CodeVault (NextJS)",
+      gitUrl: `https://github.com/isurusajith68/CodeVault-NextJS`,
+      demo: "https://codevault68.netlify.app/",
+    },
+
     {
       img: `url(${and})`,
       name: "Food Delivery App (Java)",
@@ -47,13 +54,7 @@ const Project = () => {
       gitUrl: `https://github.com/isurusajith68/Login-OTP-Validation`,
       demo: "",
     },
-    {
-      img: `url(${png})`,
-      name: "CodeVault (NextJS)",
-      gitUrl: `https://github.com/isurusajith68/CodeVault-NextJS`,
-      demo: "https://codevault68.netlify.app/",
-    },
-
+  
     {
       img: `url(${portfolio})`,
       name: "Portfolio (ReactJs)",
