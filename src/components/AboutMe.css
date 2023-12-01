@@ -4,6 +4,8 @@
   background-color: rgb(0, 0, 0, 0.5);
 }
 
+
+
 .about.container {
   width: 80%;
   display: block;
@@ -266,3 +268,4 @@
     height: 150px;
   }
 }
+
