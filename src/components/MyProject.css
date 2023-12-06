@@ -131,7 +131,8 @@
 }
 
 .color-white {
-  color: #3c3b3b;
+  color: white;
+ 
 }
 
 .box-container {
@@ -240,6 +241,11 @@
 
 .flip-box-header {
   font-size: 20px;
+  text-transform: capitalize;
+  text-shadow:
+    1px 1px 1px rgb(58, 58, 58),
+    2px 2px 1px rgb(58, 58, 58);
+  text-align: center;
 }
 
 .flip-box p {

@@ -43,8 +43,8 @@ const Project = () => {
               <div class="flip-box">
                 <div class="flip-box-front text-center" style={{ backgroundImage: `${project.img}` }}>
                   <div class="inner color-white" >
-                    <h3 class="flip-box-header">{project.name}</h3>
-                    <FaArrowCircleRight size={25} style={{ marginTop: "10px" }} />
+                    <h3 class="flip-box-header" >{project.name}</h3>
+                    <FaArrowCircleRight size={25} style={{ marginTop: "10px" }} color="rgb(58, 58, 58)" />
                   </div>
                 </div>
                 <div class="flip-box-back text-center" style={{ backgroundImage: `${project.img}` }} >
