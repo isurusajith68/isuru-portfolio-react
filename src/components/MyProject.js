@@ -1,6 +1,7 @@
 import "./MyProject.css";
 import React, { useRef, useState } from "react";
 import { projects } from "../utils/projects";
+import { FaArrowCircleRight } from "react-icons/fa";
 const projectsPerPage = 3;
 
 const Project = () => {
@@ -36,26 +37,29 @@ const Project = () => {
         {/* <p className="parf">My recent work</p> */}
       </div>
       <div>
-        <div className="container22">
+        <div className="box-container">
           {displayedProjects.map((project, index) => (
-            <div
-              key={index}
-              className="img"
-              style={{
-                backgroundImage: `${project.img}`,
-              }}
-            >
-              <div className="overlay">
-                <div>
-                  <span className="span">{project.name}</span>
+            <div class="box-item">
+              <div class="flip-box">
+                <div class="flip-box-front text-center" style={{ backgroundImage: `${project.img}` }}>
+                  <div class="inner color-white" >
+                    <h3 class="flip-box-header">{project.name}</h3>
+                    <FaArrowCircleRight size={25} style={{ marginTop: "10px" }} />
+                  </div>
                 </div>
-                <div>
-                  <a href={project.demo}>
-                    <button className="button">Demo</button>
-                  </a>
-                  <a href={project.gitUrl}>
-                    <button className="button1">Code</button>
-                  </a>
+                <div class="flip-box-back text-center" style={{ backgroundImage: `${project.img}` }} >
+                  <div>
+
+                  </div>
+                  <div class="inner color-white" >
+                    <h3 class="flip-box-header">{project.name}</h3>
+                    <a href={project.gitUrl}>
+                      <button class="flip-box-button">Source Code</button>
+                    </a>
+                    <a href={project.demo}>
+                      <button class="flip-box-button2">Demo</button>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
