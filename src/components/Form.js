@@ -7,10 +7,12 @@ export const Form = () => {
   const form = useRef();
 
   const [status, setStatus] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
 
+    setLoading(true);
     emailjs
       .sendForm(
         "service_xhbbnfj",
@@ -20,22 +22,30 @@ export const Form = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
-          setStatus("SUCCESS");
-        },
 
-        (error) => {
-          console.log(error.text);
-          setStatus("Un");
-        }
-      );
-    e.target.reset();
+          setStatus("Success")
+          setLoading(false);
+
+        }).catch(err => {
+          setStatus("Error")
+          setLoading(false);
+          console.log(err)
+          setTimeout(() => {
+            setStatus("")
+          }, 1000)
+        })
+
+
   };
+
+
+  console.log(status)
+
+
 
   return (
     <div name="form">
       <h1 style={{ textAlign: `center`, marginTop: `30px` }}>Contact</h1>
-      {status && RenderAlert()}
       <form ref={form} onSubmit={sendEmail}>
         <label>Subject</label>
         <input type="text" name="subject" required />
@@ -45,14 +55,9 @@ export const Form = () => {
         <input type="email" name="from_name" required />
         <label>Message</label>
         <textarea rows={6} name="message" required />
-        <input className="btn" type="submit" value="Send" />
+        <input className="btn" type="submit" value={loading ? "Sending..." : "Send"} disabled={loading} />
       </form>
+      <p className="" style={{ color: "red", display: "flex", justifyContent: "center ", marginBottom: "50px", marginTop: "-50px" }}>{status === "Success" ? "Message sent successfully." : "Failed to send message."}</p>
     </div>
   );
 };
-
-const RenderAlert = () => (
-  <div className="suc">
-    <p className="p1">message sent successfully.</p>
-  </div>
-);
