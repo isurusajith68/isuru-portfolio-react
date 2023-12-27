@@ -25,6 +25,9 @@ export const Form = () => {
 
           setStatus("Success")
           setLoading(false);
+          setTimeout(() => {
+            setStatus("")
+          }, 1000)
 
         }).catch(err => {
           setStatus("Error")
@@ -57,7 +60,7 @@ export const Form = () => {
         <textarea rows={6} name="message" required />
         <input className="btn" type="submit" value={loading ? "Sending..." : "Send"} disabled={loading} />
       </form>
-      <p className="" style={{ color: "red", display: "flex", justifyContent: "center ", marginBottom: "50px", marginTop: "-50px" }}>{status === "Success" ? "Message sent successfully." : "Failed to send message."}</p>
+      <p className="" style={{ color: "red", display: "flex", justifyContent: "center ", marginBottom: "50px", marginTop: "-50px" }}>{status === "Success" && "Message sent successfully."}</p>
     </div>
   );
 };
