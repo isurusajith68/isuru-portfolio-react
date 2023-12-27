@@ -41,7 +41,7 @@ const Project = () => {
           {displayedProjects.map((project, index) => (
             <div class="box-item">
               <div class="flip-box">
-                <div class="flip-box-front text-center" style={{ backgroundImage: `${project.img}` }}>
+                <div class="flip-box-front text-center" loading="lazy" style={{ backgroundImage: `${project.img}` }}>
                   <div class="inner color-white" >
                     <h3 class="flip-box-header" >{project.name}</h3>
                     <FaArrowCircleRight size={25} style={{ marginTop: "10px" }} color="rgb(58, 58, 58)" />
