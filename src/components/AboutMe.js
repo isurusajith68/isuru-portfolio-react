@@ -26,6 +26,7 @@ const AboutMe = () => {
                 className="myimg"
                 src="https://avatars.githubusercontent.com/u/89340506?v=4"
                 alt="myimg"
+                loading="lazy"
               />
             </div>
           </div>
