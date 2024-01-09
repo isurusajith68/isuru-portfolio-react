@@ -22,7 +22,7 @@ const Skills = () => {
         <div className="parfcontainer">
           <p className="parf">These are the technologies I've worked with</p>
           <div className="imgcon">
-            <Marquee autoFill={true} gradient={true} gradientColor="black" pauseOnHover={true}  >
+            <Marquee autoFill={true} gradient={true} gradientColor="black"  play={true} >
               <div>
                 <img className="img1" src={HTML} alt="HTML icon" />
                 <p className="namea">HTML</p>
