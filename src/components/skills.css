@@ -10,16 +10,24 @@
   margin-bottom: 50px;
 }
 
+.parfcontainer{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
 .imgcon {
   display: flex;
   flex-wrap: wrap;
+  width: 90vw;
   text-align: center;
+  align-items: center;
   justify-content: center;
 }
 .img1 {
   width: 100px;
   height: 100px;
-  margin: 20px; 
+  margin: 20px;
   cursor: pointer;
   transition: all 0.3 ease;
 }
