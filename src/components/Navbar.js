@@ -2,10 +2,12 @@ import "./Navbar.css";
 import React, { useState } from "react";
 import { Link } from "react-scroll";
 import { FaBars, FaTimes } from "react-icons/fa";
-
+import { motion, useScroll } from "framer-motion";
 const Navbar = () => {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
+
+  const { scrollYProgress } = useScroll();
 
   const [color, setColor] = useState(false);
   const changecolor = () => {
@@ -19,7 +21,8 @@ const Navbar = () => {
   window.addEventListener("scroll", changecolor);
 
   return (
-    <div className={color ? "header header-bg" : "header"} s>
+    <div className={color ? "header header-bg" : "header"} >
+
       <Link to="homeT" smooth={true} duration={500}>
         <h1 style={{ cursor: `pointer` }}>Portfolio</h1>
       </Link>
@@ -83,6 +86,10 @@ const Navbar = () => {
           <FaBars size={20} style={{ color: "#fff " }} />
         )}
       </div>
+      <motion.div
+        className="progress-bar"
+        style={{ scaleX: scrollYProgress }}
+      />
     </div>
   );
 };

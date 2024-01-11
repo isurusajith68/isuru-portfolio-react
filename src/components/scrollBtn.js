@@ -1,11 +1,10 @@
 import { useState } from "react";
 import { BsFillArrowUpCircleFill } from "react-icons/bs";
-import { IoRefreshCircleSharp } from "react-icons/io5";
+import { motion } from "framer-motion";
 import "./scrollbtn.css";
 
 const ScrollBtn = () => {
   const [visible, setVisible] = useState(false);
-  const [isHovered, setIsHovered] = useState(false);
 
   const toggleVisible = () => {
     const scrolled = document.documentElement.scrollTop;
@@ -23,49 +22,29 @@ const ScrollBtn = () => {
     });
   };
 
-  window.onscroll = function () {
-    scrollRotate();
-  };
-
-  function scrollRotate() {
-    let image = document.getElementById("reload");
-    image.style.transform = "rotate(" + window.pageYOffset / 2 + "deg)";
-  }
-
-  const handleMouseEnter = () => {
-    setIsHovered(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsHovered(false);
-  };
 
   window.addEventListener("scroll", toggleVisible);
 
   return (
-    <div
+    <motion.div
       className="scroll-btn"
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
+      initial={{ opacity: 0, x: 100 }}
+      animate={{ opacity: 1 , x: 0}}
+      transition={{ duration: 1, delay: 2 }}
+
     >
-      {isHovered ? (
-        <BsFillArrowUpCircleFill
-          // id="reload"
-          onClick={scrollToTop}
-          size={35}
-          style={{ display: visible ? "inline" : "none" }}
-        />
-      ) : (
-        <IoRefreshCircleSharp
-          id="reload"
-          onClick={scrollToTop}
-          size={44}
-          style={{
-            display: visible ? "inline" : "none",
-          }}
-        />
-      )}
-    </div>
+
+      <BsFillArrowUpCircleFill
+        id="reload"
+        onClick={scrollToTop}
+        size={30}
+        style={{
+          display: visible ? "inline" : "none",
+          
+        }}
+      />
+
+    </motion.div>
   );
 };
 export default ScrollBtn;

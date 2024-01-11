@@ -58,3 +58,15 @@
         display: initial;
     }
 }
+
+
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: white;
+  transform-origin: 0%;
+}
