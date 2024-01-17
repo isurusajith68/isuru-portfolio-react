@@ -10,6 +10,12 @@ import authImage from "../assets/auths.gif";
 
 export const projects = [
     {
+        img: `url(${png})`,
+        name: "CodeVault (NextJS)",
+        gitUrl: `https://github.com/isurusajith68/CodeVault-NextJS`,
+        demo: `https://codevault68.netlify.app/`,
+    },
+    {
         img: `url(${img})`,
         name: "E Shop (React Native)",
         gitUrl: `https://github.com/isurusajith68/Eshop_React_Native`,
@@ -21,12 +27,7 @@ export const projects = [
         gitUrl: `https://github.com/isurusajith68/ecommerce_site_redux`,
         demo: `https://github.com/isurusajith68/ecommerce_site_redux`,
     },
-    {
-        img: `url(${png})`,
-        name: "CodeVault (NextJS)",
-        gitUrl: `https://github.com/isurusajith68/CodeVault-NextJS`,
-        demo: `https://codevault68.netlify.app/`,
-    },
+    
 
 
     {
