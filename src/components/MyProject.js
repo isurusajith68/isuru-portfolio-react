@@ -9,8 +9,6 @@ const Project = () => {
   const projectSectionRef = useRef(null);
   const startIndex = (currentPage - 1) * projectsPerPage;
 
-
-
   const endIndex = startIndex + projectsPerPage;
 
   const displayedProjects = projects.slice(startIndex, endIndex);
@@ -34,24 +32,33 @@ const Project = () => {
     >
       <div>
         <h1 className="titles">Project</h1>
-        {/* <p className="parf">My recent work</p> */}
+        <p className="parf">Here are some of the projects I have worked on.</p>
       </div>
       <div>
         <div className="box-container">
           {displayedProjects.map((project, index) => (
             <div class="box-item">
               <div class="flip-box">
-                <div class="flip-box-front text-center" loading="lazy" style={{ backgroundImage: `${project.img}` }}>
-                  <div class="inner color-white" >
-                    <h3 class="flip-box-header" >{project.name}</h3>
-                    <FaArrowCircleRight size={25} style={{ marginTop: "10px" }} color="rgb(58, 58, 58)" />
+                <div
+                  class="flip-box-front text-center"
+                  loading="lazy"
+                  style={{ backgroundImage: `${project.img}` }}
+                >
+                  <div class="inner color-white">
+                    <h3 class="flip-box-header">{project.name}</h3>
+                    <FaArrowCircleRight
+                      size={25}
+                      style={{ marginTop: "10px" }}
+                      color="rgb(58, 58, 58)"
+                    />
                   </div>
                 </div>
-                <div class="flip-box-back text-center" style={{ backgroundImage: `${project.img}` }} >
-                  <div>
-
-                  </div>
-                  <div class="inner color-white" >
+                <div
+                  class="flip-box-back text-center"
+                  style={{ backgroundImage: `${project.img}` }}
+                >
+                  <div></div>
+                  <div class="inner color-white">
                     <h3 class="flip-box-header">{project.name}</h3>
                     <a href={project.gitUrl}>
                       <button class="flip-box-button">Source Code</button>
@@ -134,7 +141,6 @@ const Project = () => {
           </button>
         )}
       </div>
-
     </div>
   );
 };

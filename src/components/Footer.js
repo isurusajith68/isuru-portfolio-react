@@ -139,6 +139,12 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <div className="footer-bottom">
+        <p>
+          &copy; 2021 Isuru Sajith Rajapaksha. All rights reserved. Designed by
+          Isuru Sajith Rajapaksha
+        </p>
+      </div>
     </div>
   );
 };

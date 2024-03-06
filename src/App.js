@@ -9,13 +9,10 @@ import Project from "./components/MyProject";
 
 import "./App.css";
 function App() {
-
-
   return (
     <div>
       <div>
         <Navbar />
-        
         <HomeT />
         <ScrollBtn />
         <AboutMe />

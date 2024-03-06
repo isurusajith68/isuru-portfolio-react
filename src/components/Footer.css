@@ -1,76 +1,76 @@
-.footer{
-    width: 100%; 
-    padding: 6rem 0;
-    background-color: rgba(19, 19, 18, 0.8);
-
+.footer {
+  width: 100%;
+  padding: 1rem;
+  background-color: rgba(19, 19, 18, 0.8);
 }
 
-.footer-container{
-    max-width: 1140px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 40px;
+.footer-container {
+  max-width: 1140px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 40px;
 }
 
-.left{
-    height: 100%;
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-
+.left {
+  height: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
 }
 
-.location{
-    display: flex;
-    margin-bottom: 0.8rem;
-
+.location {
+  display: flex;
+  margin-bottom: 0.8rem;
 }
 
-.location p{
-    line-height: 30px;
-
+.location p {
+  line-height: 30px;
 }
 
-.right{
-    height: 100%;
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    
+.right {
+  height: 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
 }
 
-.social{
- margin-top: -12.5rem;
- margin-left: 70%;
+.social {
+  margin-top: -12.5rem;
+  margin-left: 70%;
 }
 
-
-@media screen and (max-width:640px) {
-    .footer-container{
-        margin-left: 10px;
-        grid-template-columns:1fr;
-    }
-    .social{
-        margin-top: 10%;
-        margin-left: 10px;
-        }
-        
-    
+@media screen and (max-width: 640px) {
+  .footer-container {
+    margin-left: 10px;
+    grid-template-columns: 1fr;
+  }
+  .social {
+    margin-top: 10%;
+    margin-left: 10px;
+  }
 }
 
-@media screen and (max-width:380px) {
-    .footer-container{
-        margin-left: 1rem;
-        
-    }
-    .social{
-       margin-top: 10%;
-       margin-left: 10px;
-       }
-       
-    
+@media screen and (max-width: 380px) {
+  .footer-container {
+    margin-left: 1rem;
+  }
+  .social {
+    margin-top: 10%;
+    margin-left: 10px;
+  }
 }
 
+.footer-bottom {
+  width: 100%;
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  text-align: center;
+  height: 100px;
+  padding: 5px;
+}

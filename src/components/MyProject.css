@@ -123,16 +123,12 @@
   font-weight: bold;
 }
 
-
-
-
 .text-center {
   text-align: center;
 }
 
 .color-white {
   color: white;
- 
 }
 
 .box-container {
@@ -142,12 +138,11 @@
   justify-content: space-around;
   padding: 35px 15px;
   width: 100%;
-  
 }
 
-@media screen and (min-width:1380px) {
+@media screen and (min-width: 1380px) {
   .box-container {
-    flex-direction: row
+    flex-direction: row;
   }
 }
 
@@ -155,18 +150,26 @@
   position: relative;
   -webkit-backface-visibility: hidden;
   width: 400px;
-  
+
   margin-bottom: 35px;
- 
 }
 
+@media screen and (max-width: 420px) {
+  .box-item {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .box-item {
+    width: 300px;
+  }
+}
 .flip-box {
   -ms-transform-style: preserve-3d;
   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
   perspective: 1000px;
   -webkit-perspective: 1000px;
-
 }
 
 .flip-box-front,
@@ -177,9 +180,9 @@
   background-color: #000000;
 
   min-height: 250px;
-  -ms-transition: transform 0.7s cubic-bezier(.4,.2,.2,1);
-  transition: transform 0.7s cubic-bezier(.4,.2,.2,1);
-  -webkit-transition: transform 0.7s cubic-bezier(.4,.2,.2,1);
+  -ms-transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  -webkit-transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
@@ -233,18 +236,16 @@
   -webkit-perspective: inherit;
   perspective: inherit;
   z-index: 2;
-  transform: translateY(-50%) translateZ(60px) scale(.94);
-  -webkit-transform: translateY(-50%) translateZ(60px) scale(.94);
-  -ms-transform: translateY(-50%) translateZ(60px) scale(.94);
+  transform: translateY(-50%) translateZ(60px) scale(0.94);
+  -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
+  -ms-transform: translateY(-50%) translateZ(60px) scale(0.94);
   top: 50%;
 }
 
 .flip-box-header {
   font-size: 20px;
   text-transform: capitalize;
-  text-shadow:
-    1px 1px 1px rgb(58, 58, 58),
-    2px 2px 1px rgb(58, 58, 58);
+  text-shadow: 1px 1px 1px rgb(58, 58, 58), 2px 2px 1px rgb(58, 58, 58);
   text-align: center;
 }
 
@@ -264,7 +265,7 @@
   border-radius: 10px;
   color: #ffffff;
   margin-left: 5px;
-   background-color: #b40000;
+  background-color: #b40000;
   opacity: 50%;
   cursor: pointer;
   font-size: 10px;
