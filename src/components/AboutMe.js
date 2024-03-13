@@ -11,14 +11,15 @@ const AboutMe = () => {
           <div className="content1">
             <div className="article">
               <h3>
-                I am an undergraduate, currently following a B.Sc (Hons)
-                Information Technology degree offered by SLIIT at Malabe. I am a
-                well-organized, collaborative team player with strong
-                communication and analytical skills. I consider every challenge
-                I get as an opportunity to improve my skills. I would like to
-                use my skills to contribute productively and positively to
-                fulfill the goals of the organization while improving my
-                knowledge through hands-on learning and development work.
+                I am a recent graduate with a Bachelor of Science (Hons) degree
+                in Information Technology from SLIIT in Malabe. Throughout my
+                undergraduate studies, I honed my skills in organization,
+                collaboration, communication, and analysis. I thrive on
+                challenges, viewing each one as an opportunity for personal and
+                professional growth. I am eager to apply my skills and knowledge
+                to contribute meaningfully to the objectives of any
+                organization, while also seeking further hands-on learning and
+                development opportunities to continue expanding my expertise
               </h3>
             </div>
             <div className="image">

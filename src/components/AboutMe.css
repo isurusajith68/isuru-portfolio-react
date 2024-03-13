@@ -37,6 +37,7 @@
   margin-left: 10px;
   float: left;
   width: 80%;
+  margin-left: 20px;
   color: aliceblue;
   margin-top: 5%;
   letter-spacing: normal;
@@ -59,7 +60,7 @@
   animation: morph 8s ease-in-out infinite;
   border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   height: 250px;
-  margin-left: -30px;
+  /* margin-left: -20%; */
   transition: all 1s ease-in-out;
   width: 250px;
   border: 2px lightgray solid;
