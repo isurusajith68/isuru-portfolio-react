@@ -12,7 +12,9 @@ function App() {
   return (
     <div>
       <div>
+        {/* Navbar */}
         <Navbar />
+        {/* Home Section */}
         <HomeT />
         <ScrollBtn />
         <AboutMe />
